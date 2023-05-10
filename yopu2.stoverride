@@ -1,0 +1,17 @@
+name: 有谱么解锁vip
+desc: 有谱么解锁vip
+
+http:
+  mitm:
+    - "yopu.co"
+  script:
+    - match: ^https?:\/\/yopu\.co\/auth\/local
+      name: yopu
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  wps:
+    url: https://raw.githubusercontent.com/cloudxxj/myblog/master/123.js
+    interval: 86400
