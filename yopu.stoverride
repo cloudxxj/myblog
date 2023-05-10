@@ -12,6 +12,6 @@ http:
       timeout: 10
       
 script-providers:
-  wps:
+  yopu:
     url: https://raw.githubusercontent.com/cloudxxj/myblog/master/123.js
     interval: 86400
